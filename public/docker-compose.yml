@@ -1,0 +1,12 @@
+version: "3"
+services:
+  msis-offer
+  # . means to look in the current directory
+    build: .
+    #we are setting the port for the transport layer
+    ports:
+      - "8080:80"
+      #take my public folder and map it to this location. 
+      #prevents you from having to rebuild the container
+    volumes: 
+      - ./public:/var/www/html
