@@ -15,8 +15,10 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
-   
+  <body>
+    <!-- Navigation header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">John Doe</a>
@@ -26,16 +28,21 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
-              <a class="nav-link active" href="background.html">Favorite Books</a>
-              <a class="nav-link active" href="future.html">My Future</a>
+              <a class="nav-link active boldnav" href="background.html">Favorite Books</a>
+              <a class="nav-link active" href="future.html">Photography</a>
             </div>
           </div>
         </div>
       </nav>
+
+      <!-- Container for entire page -->
     <div class="container col-lg-9 col-md-9 col-sm-12 col-xs-12">
 <main>
     <br>
-    <h1 class="mx-auto" style="width: 400px;">My Favorite Books</h1><br>
+    <!-- Title -->
+    <h1 class="mx-auto title" style="width: 400px;">My Favorite Books</h1><br>
+
+    <!-- Table from bootstrap documentation -->
     <table class="table table-bordered table-striped table-hover table-striped table-hover">
         <thead>
           <tr>
@@ -84,10 +91,14 @@
           <td>$25.49</td>
         </tr>
         </tbody>
-        
       </table>
       <br>
+
+      <!-- Title -->
       <h2 style="text-align:center">Add New Books Below:</h2><br>
+      
+      <!-- Form from bootstrap documentation -->
+      <form action="script.php" method="post">
       <div class="row">
         <div class="col">
           <input type="text" class="form-control" placeholder="Book Title" aria-label="First name">
@@ -117,8 +128,18 @@
         </div>
       </div>
     </div>
-</main>
-<body>
+    
+</form>
 
+</main>
+<br>
+<div class="d-grid gap-2 d-md-block" align="center">
+    <button class="btn btn-primary" type="button">Submit</button>
+  </div>
+<br><br><br>
+    <!-- Footer -->
+    <div class="footer">
+        <p>Thank you for visiting my page</p>
+      </div>
 </body>
 </html>
